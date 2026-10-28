@@ -1,0 +1,20 @@
+{
+  "name": "console-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Console Dashboard — Xbox/PS5 style gaming home screen UI",
+  "scripts": {
+    "dev": "npx http-server . -p 8080 -c-1",
+    "generate-covers": "node scripts/generate-covers.js"
+  },
+  "keywords": [
+    "console",
+    "dashboard",
+    "xbox",
+    "playstation",
+    "gaming",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT"
+}

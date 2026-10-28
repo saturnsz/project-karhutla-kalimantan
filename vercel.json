@@ -1,0 +1,55 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/console-dashboard/index.html"
+    },
+    {
+      "source": "/css/(.*)",
+      "destination": "/console-dashboard/css/$1"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "/console-dashboard/js/$1"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/console-dashboard/assets/$1"
+    },
+    {
+      "source": "/((?!console-dashboard/).*)",
+      "destination": "/console-dashboard/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    }
+  ]
+}

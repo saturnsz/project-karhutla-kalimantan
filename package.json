@@ -1,0 +1,19 @@
+{
+  "name": "project-karhutla-kalimantan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Console Dashboard UI and Karhutla Project",
+  "scripts": {
+    "dev": "npx http-server console-dashboard -p 8080 -c-1",
+    "start": "npx http-server console-dashboard -p 8080 -c-1",
+    "deploy": "npx vercel"
+  },
+  "keywords": [
+    "console",
+    "dashboard",
+    "gaming",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT"
+}
