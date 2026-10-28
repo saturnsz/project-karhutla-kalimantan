@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a15"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" fill="url(#bg)"/>
+  
+  <!-- Ambient glow -->
+  <rect width="256" height="256" fill="url(#glow)"/>
+  
+  <!-- Noise texture overlay -->
+  <rect width="256" height="256" fill="#0a0a15" opacity="0.1"/>
+  
+  <!-- Icon artwork -->
+  <g filter="url(#blur)" opacity="0.3">
+    <path d="M128 60 L128 80" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+           <circle cx="128" cy="90" r="15" fill="none" stroke="#94a3b8" stroke-width="1.5" opacity="0.5"/>
+           <path d="M128 105 L128 150" stroke="#94a3b8" stroke-width="2.5" opacity="0.5"/>
+           <path d="M128 115 L105 135" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 115 L151 135" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 150 L115 185" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 150 L141 185" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M155 75 Q180 85 185 100" stroke="#64748b" stroke-width="1" fill="none" opacity="0.3"/>
+           <path d="M101 75 Q76 85 71 100" stroke="#64748b" stroke-width="1" fill="none" opacity="0.3"/>
+           <rect x="50" y="180" width="156" height="2" rx="1" fill="#334155" opacity="0.3"/>
+           <circle cx="85" cy="60" r="1" fill="#94a3b8" opacity="0.3"/>
+           <circle cx="170" cy="65" r="0.8" fill="#cbd5e1" opacity="0.2"/>
+  </g>
+  <g>
+    <path d="M128 60 L128 80" stroke="#94a3b8" stroke-width="2" opacity="0.6"/>
+           <circle cx="128" cy="90" r="15" fill="none" stroke="#94a3b8" stroke-width="1.5" opacity="0.5"/>
+           <path d="M128 105 L128 150" stroke="#94a3b8" stroke-width="2.5" opacity="0.5"/>
+           <path d="M128 115 L105 135" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 115 L151 135" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 150 L115 185" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M128 150 L141 185" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+           <path d="M155 75 Q180 85 185 100" stroke="#64748b" stroke-width="1" fill="none" opacity="0.3"/>
+           <path d="M101 75 Q76 85 71 100" stroke="#64748b" stroke-width="1" fill="none" opacity="0.3"/>
+           <rect x="50" y="180" width="156" height="2" rx="1" fill="#334155" opacity="0.3"/>
+           <circle cx="85" cy="60" r="1" fill="#94a3b8" opacity="0.3"/>
+           <circle cx="170" cy="65" r="0.8" fill="#cbd5e1" opacity="0.2"/>
+  </g>
+  
+  <!-- Bottom gradient -->
+  <rect y="180" width="256" height="76" fill="url(#bg)" opacity="0.5"/>
+  
+  <!-- Subtle border -->
+  <rect x="0.5" y="0.5" width="255" height="255" rx="4" fill="none" stroke="#94a3b8" stroke-width="0.5" opacity="0.15"/>
+</svg>
